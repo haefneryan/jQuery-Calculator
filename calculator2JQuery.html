@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>jQuery Calculator</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="calculator2JQuery.js"></script>
+		<link rel="stylesheet" type="text/css" href="calculator2JQuery.css">
+
+	</head>
+
+	<body id='body' class='light-mode' onload="storemode()">
+		<img src="sun.png" width="30" height="30" align="right" onclick="changemode()">
+
+		<h1>jQuery Calculator</h1>
+		
+		<hr>
+		<table border="1" class="center">
+			<tr>
+				<td colspan="5"><input type="text" id="answer" value="0" class="display" style="width: 276px"></td>
+			</tr>
+			<tr>
+				<td><button value="7" onclick="display('7')" class="input-button">7</button></td>
+				<td><button value="8" onclick="display('8')" class="input-button">8</button></td>
+				<td><button value="9" onclick="display('9')" class="input-button">9</button></td>
+				<td><button value="/" onclick="display('/')" class="input-button">÷</button></td>
+				<td><button value="B" onclick="backspace()" class="input-button">←</button></td>
+			</tr>
+			<tr>
+				<td><button value="4" onclick="display('4')" class="input-button">4</button></td>
+				<td><button value="5" onclick="display('5')" class="input-button">5</button></td>
+				<td><button value="6" onclick="display('6')" class="input-button">6</button></td>
+				<td><button value="*" onclick="display('*')" class="input-button">x</button></td>
+				<td rowspan="3"><button value="=" onclick="solve()" class="input-button" style="height: 162px">=</button></td>
+			</tr>
+			<tr>
+				<td><button value="1" onclick="display('1')" class="input-button">1</button></td>
+				<td><button value="2" onclick="display('2')" class="input-button">2</button></td>
+				<td><button value="3" onclick="display('3')" class="input-button">3</button></td>
+				<td><button value="+" onclick="display('+')" class="input-button">+</button></td>
+			</tr>
+			<tr>
+				<td><button value="." onclick="display('.')" class="input-button">.</button></td>
+				<td><button value="0" onclick="display('0')" class="input-button">0</button></td>
+				<td><button value="C" onclick="clr()" class="input-button">C</button></td>
+				<td><button value="-" onclick="display('-')" class="input-button">-</button></td>
+			</tr>
+
+		</table>
+		<hr>
+	</body>
+
+
+</html>
+
+

@@ -1,0 +1,60 @@
+
+h1 {
+	text-align: center;
+	/*border: greenyellow;*/
+}
+
+div	{
+	/*width: 300px;*/
+	height: 30px;
+}
+
+body {
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.input-button {
+	text-align: center;
+	background-color: lightgrey;
+	height: 50px;
+	width: 50px;
+	font-size: 30px;
+}
+
+.display {
+	text-align: right;
+	background-color: white;
+	height: 30px;
+	width: 222px;
+	font-size: 30px;
+}
+
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.light-mode{
+	background-color: lightblue;
+	color: black;
+} 
+
+.dark-mode {
+	background-color: #262626;
+	color: white;
+}
+
+.date_box {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: grey;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
