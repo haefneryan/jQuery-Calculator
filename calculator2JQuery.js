@@ -1,4 +1,11 @@
 
+if (document.body.style.backgroundColor == 'lightblue') {
+	$('#body').addClass('light-mode');
+	//$('#body').addClass(localStorage.setItem('saved_theme', 'lightblue'));
+} else {
+	$('#body').addClass('dark-blue');
+}
+
 // Function solves input
 function solve(){
 	var x = $('#answer').val()
