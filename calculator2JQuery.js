@@ -1,5 +1,6 @@
 
 if (document.body.style.backgroundColor == 'lightblue') {
+	$('#body').removeClass();
 	$('#body').addClass('light-mode');
 } else if (document.body.style.backgroundColor == '#262626') {
 	$('#body').addClass('dark-mode');
