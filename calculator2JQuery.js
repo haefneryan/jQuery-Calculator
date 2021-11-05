@@ -1,11 +1,4 @@
 
-//password protection
-var pass = '';
-var adminPassword = '123';
-if(localStorage.getItem("localPassword") == adminPassword){
-	console.log('admin access approved')
-}
-
 if(localStorage.getItem("localPassword") != adminPassword){
 	do {
 		pass = prompt('Please enter your password');
@@ -61,7 +54,6 @@ function  changemode(){
 	else if($('#body').hasClass("light-mode")){
 		$('#body').removeClass("light-mode").addClass("dark-mode");
 	}
-
 	localStorage.setItem("saved_theme", document.getElementById('body').className);
 	console.log(localStorage.getItem('saved_theme'))
 }
@@ -99,7 +91,6 @@ $(document).keydown(function(e){
 	if(e.key == '=' || e.key == 'Enter'){
 		solve();
 	}
-	
 });
 
 function backspace() {
