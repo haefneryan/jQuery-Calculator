@@ -1,9 +1,8 @@
 
 if (document.body.style.backgroundColor == 'lightblue') {
 	$('#body').addClass('light-mode');
-	//$('#body').addClass(localStorage.setItem('saved_theme', 'lightblue'));
-} else {
-	$('#body').addClass('dark-blue');
+} else if (document.body.style.backgroundColor == '#262626') {
+	$('#body').addClass('dark-mode');
 }
 
 // Function solves input
