@@ -1,23 +1,4 @@
 
-//password protection
-var pass = '';
-var adminPassword = '123';
-if(localStorage.getItem("localPassword") == adminPassword){
-	console.log('admin access approved')
-}
-
-if(localStorage.getItem("localPassword") != adminPassword){
-	do {
-		pass = prompt('Please enter your password');
-		if (pass != adminPassword){
-			alert("Incorrect Password. Please try again")
-		}
-		if (pass == adminPassword) {
-			localStorage.setItem("localPassword", pass)
-		}
-	} while (pass != adminPassword)
-}
-
 // Function solves input
 function solve(){
 	var x = $('#answer').val()
