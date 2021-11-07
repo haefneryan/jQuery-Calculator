@@ -42,7 +42,6 @@ function  changemode(){
 	else if($('#body').hasClass("light-mode")){
 		$('#body').removeClass("light-mode").addClass("dark-mode");
 	}
-
 	localStorage.setItem("saved_theme", document.getElementById('body').className);
 	console.log(localStorage.getItem('saved_theme'))
 }
@@ -80,7 +79,6 @@ $(document).keydown(function(e){
 	if(e.key == '=' || e.key == 'Enter'){
 		solve();
 	}
-	
 });
 
 function backspace() {
